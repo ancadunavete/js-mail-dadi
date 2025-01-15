@@ -21,5 +21,17 @@ let arrayMail = [
 
 let emailPerson = prompt ("Inserisci la tua email", "name@gmail.com")
 
+ let emailTrovata = false
+
 for (let i = 0; i < arrayMail; i++)
     let singoloElemento = arrayMail[i]
+
+    if (emailPerson === singoloElemento ){
+        emailTrovata = true
+    }
+
+if ( emailTrovata === true) {
+    console.log ( `${emailPerson} puoi accedere alla festa!`)
+} else {
+    console.log ( `Non puoi accedere alla festa :()` )
+}
